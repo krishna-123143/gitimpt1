@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix Clone</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: #000;
+        }
+        .logo { color: #e50914; font-size: 32px; font-weight: bold; }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+        }
+        .hero {
+            height: 420px;
+            padding: 120px 5%;
+            background: linear-gradient(to right, #000, transparent),
+                        url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba");
+            background-size: cover;
+            background-position: center;
+        }
+        .hero h1 { font-size: 45px; margin-bottom: 15px; }
+        .hero p { width: 450px; margin-bottom: 20px; }
+        button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .play { background: white; }
+        .info { background: #555; color: white; }
+        section { padding: 25px 5%; }
+        section h2 { margin-bottom: 15px; }
+        .movies {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+        }
+        .movie {
+            min-width: 160px;
+            height: 230px;
+            border-radius: 5px;
+            background-size: cover;
+            background-position: center;
+            transition: 0.3s;
+        }
+        .movie:hover { transform: scale(1.08); }
+        footer { text-align: center; padding: 30px; color: #888; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">NETFLIX</div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">TV Shows</a>
+        <a href="#">Movies</a>
+        <a href="#">My List</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>Stranger Things</h1>
+    <p>A group of young friends discover mysterious events happening in their town.</p>
+    <button class="play">▶ Play</button>
+    <button class="info">ⓘ More Info</button>
+</div>
+
+<section>
+    <h2>Trending Now</h2>
+    <div class="movies">
+        <div class="movie" style="background-image:url('https://image.tmdb.org/t/p/w500/1X4hYc5JpQ3Z3r9Q.jpg')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1536440136628-849c177e76a1')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1485846234645-a62644f84728')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba')"></div>
+    </div>
+</section>
+
+<section>
+    <h2>Popular Movies</h2>
+    <div class="movies">
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1440404653325-ab127d49abc1')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1512070679279-c2f999098c01')"></div>
+        <div class="movie" style="background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba')"></div>
+    </div>
+</section>
+
+<footer>© 2026 Netflix Clone | Created for Learning</footer>
+
+</body>
+</html>
